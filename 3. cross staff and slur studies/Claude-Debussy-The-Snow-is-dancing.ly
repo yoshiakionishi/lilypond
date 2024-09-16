@@ -156,7 +156,7 @@ right =
     \stemUp \lh cs''(-. \stemDown \rh f''-.
     \stemUp \lh g''-.  \stemDown\rh e'')-.
   }
-  | %10
+  | %11
 }
 
 left =
