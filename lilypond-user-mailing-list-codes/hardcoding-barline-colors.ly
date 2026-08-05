@@ -1,13 +1,13 @@
 \version "2.26.0"
 
 #(define bar-line-colors
-  `(("|"     . ,black)
-    ("||"    . ,red)
-    (":|]" . ,red)
-    ( "[|:" . ,red )
-    ("|."    . ,red)
-    (".|:"   . ,red)
-    (":|."   . ,red)
+  `(("|"     .  ,black)
+    ("||"    .  ,red)
+    (":|]"   .  ,red)
+    ("[|:"   .  ,red)
+    ("|."    .  ,red)
+    (".|:"   .  ,red)
+    (":|."   .  ,red)
     ))
 
 #(define (color-barline-stencil grob)
@@ -15,8 +15,6 @@
          (colour (assoc-ref bar-line-colors glyph)))
    (ly:grob-set-property! grob 'color (or colour black))
    (ly:bar-line::print grob)))
-
-
 
 ColorRepeatSomeBarsBeg = {
  % ColorRepeatAFewBarsStart - Override the barline colour with magenta
